@@ -7,7 +7,8 @@ require 'controllers/DashboardController.php'; // Inclui o controlador de dashbo
  
 // Criar instancia dos controladores para utilizar seus métodos.
 $authController = new AuthController(); // Instancia o controlador de autenticação = para poder usar.
- 
+$userController = new UserController();
+
 // Coleta a ação da URL, se não houver definida, usa 'login' por padrão
 $action = $_GET['action'] ?? 'login';  // Usa operador de coalescência nula (??) para definir 'login' se 'action' não estiver presente
  
