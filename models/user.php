@@ -25,7 +25,8 @@ class User
     public static function create($data)
     {
         $conn = Database::getConnection();
-        $stmt = $conn->prepare("INSERT INTO usuarios(nome, email senha, perfil)");
+        $stmt = $conn->prepare("INSERT INTO usuarios(nome, email senha, perfil) VALUE (:nome, :email, :senha, :perfil)");
+        $stmt->execute($data);
     }
 }
 ?>

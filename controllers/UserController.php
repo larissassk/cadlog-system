@@ -15,6 +15,7 @@ class UserController
             ];
 
             User::create($data);
+            header('Location: index.php');
 
         } else {
             //Se nao for post carrega a pagina de registro
