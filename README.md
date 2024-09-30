@@ -27,7 +27,7 @@ O **Cadlog System** oferece as seguintes funcionalidades:
   <img src="img/tela-login.png" alt="Tela de Login" width="300px">
 
 - **Gerenciamento de Sessões**  
-  As sessões dos usuários são gerenciadas para garantir segurança e personalização.
+  As sessões dos usuários são gerenciadas para garantir segurança e personalização.  
     <img src="img/tipo-user.png.png" alt="Tipo de usuario" width="300px">
 
 
