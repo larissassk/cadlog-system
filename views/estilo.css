@@ -1,0 +1,96 @@
+body {
+    background-color: #AEBFBE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Estilos do formulário */
+div {
+    background-color: #f2f2f3;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    margin: 6px;
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #13547a;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: auto;
+}
+
+label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 4px;
+    text-align: left;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #13547a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #80d0c7;
+}
+
+a {
+    display: block;
+    margin-top: 10px;
+    color: #13547a;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 400px) {
+    div {
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    button {
+        padding: 8px;
+    }
+}
