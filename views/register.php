@@ -1,25 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastrar-se</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estilo.css">
 </head>
-
 <body>
     <div>
-        <h2>Cadastro de usuário</h2>
+        <h2>Criar conta</h2>
         <form action="" method="post">
             <label for="nome">Nome</label>
-            <input type="text" name="nome" id="nome" required><br>
+            <input type="text" name="nome" id="nome" required>
 
             <label for="email">Email</label>
-            <input type="email" name="email" id="email" required><br>
+            <input type="email" name="email" id="email" required>
 
             <label for="senha">Senha</label>
-            <input type="password" name="senha" id="senha" required><br>
+            <input type="password" name="senha" id="senha" required>
 
             <label for="perfil">Perfil:</label>
             <select name="perfil" id="perfil">
@@ -29,7 +27,7 @@
             </select>
             <button type="submit">Cadastrar</button>
         </form>
-        <a href="">Voltar ao Login</a>
+        <a href="login.php">Voltar ao Login</a>
     </div>
 </body>
 
