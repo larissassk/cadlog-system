@@ -28,7 +28,7 @@ O **Cadlog System** oferece as seguintes funcionalidades:
 
 - **Gerenciamento de Sessões**  
   As sessões dos usuários são gerenciadas para garantir segurança e personalização.  
-    <img src="img/tipo-user.png.png" alt="Tipo de usuario" width="300px">
+    <img src="img/tipo-user.png" alt="Tipo de usuario" width="300px">
 
 
 - **Banco de Dados Integrado**  
