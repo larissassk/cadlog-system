@@ -15,7 +15,9 @@ O sistema segue a arquitetura MVC, dividindo a aplicação em três partes princ
 O **Cadlog System** oferece as seguintes funcionalidades:
 
 - **Cadastro de usuários**: Permite que novos usuários se registrem no sistema.
+  ![Cadastro](img/tela-cadastro)  
 - **Login e logout**: Usuários podem acessar suas contas com credenciais válidas e encerrar suas sessões com segurança.
+-   ![Cadastro](img/tela-login)  
 - **Gerenciamento de sessões**: As sessões dos usuários são gerenciadas para manter a segurança e a personalização.
 - **Banco de dados integrado**: Um banco de dados MySQL é utilizado para armazenar as informações dos usuários, com o arquivo de configuração `database.sql`.
 
