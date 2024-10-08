@@ -17,12 +17,19 @@ switch ($action) {
     case 'login':
         $authController->login(); // chama o método login do controlador de autenticação
         break;
+<<<<<<< HEAD
     case 'register':
         $userController->register();
         break;
     case 'dashboard':
         $dashboardController->index();
     default:
+=======
+        case 'register':
+            $userController->register();
+            break;
+            default:
+>>>>>>> ebe397a (at)
         $authController->login();
         break;
 }
