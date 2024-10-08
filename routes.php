@@ -17,8 +17,10 @@ switch($action){
     case 'login':
         $authController->login(); // chama o método login do controlador de autentificação
         break;
-        //Abrir nessa pagina 
-        default:
+        case 'register':
+            $userController->register();
+            break;
+            default:
         $authController->login();
         break;
 }

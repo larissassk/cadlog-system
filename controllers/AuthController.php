@@ -30,7 +30,7 @@ class  AuthController
 
             }else{
                 // Se nao for POST carrega a pagina de registro
-                include 'views/register.php';
+                include 'views/login.php';
             }
         }
     }
