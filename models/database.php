@@ -11,7 +11,7 @@ class Database
         //Verifica se nao existe instancia de conexão 
         if (!self::$instance) {
             $host         = 'localhost';
-            $db           = 'sistema_usuario';
+            $db           = 'sistema_usuarios';
             $user         = 'root';
             $password     = '';
             //A conexão usa o driver Mysql (mysql:) e as informações de host e DB

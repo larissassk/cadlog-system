@@ -1,5 +1,5 @@
 <?php
-require_once 'model/database.php';
+require_once 'models/database.php';
 
 class User
 {
