@@ -12,9 +12,15 @@ $userController = new UserController();
 // Coleta a ação da URL, se não houver definida, usa 'login' por padrão
 $action = $_GET['action'] ?? 'login';  // Usa operador de coalescência nula (??) para definir 'login' se 'action' não estiver presente
  
+//se o action for login
 switch($action){
     case 'login':
         $authController->login(); // chama o método login do controlador de autentificação
+        break;
+        //Abrir nessa pagina 
+        default:
+        $authController->login();
+        break;
 }
  
 ?>
