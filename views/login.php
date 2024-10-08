@@ -4,12 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Entrar</title>
-<<<<<<< HEAD
-  
-=======
     <link rel="stylesheet" href="estilo.css">
 
->>>>>>> 897228d5688bbb38bf7e08460142de0141c36b57
 </head>
 <style>
         * {
@@ -107,7 +103,6 @@
 <body>
     <!-- O formulário usa o método POST para enviar dados de forma segura -->
     <main>
-<<<<<<< HEAD
     <div class="container">
 
     <h2>Login</h2>
@@ -119,20 +114,7 @@
         <!-- Define o destino do link e leva à opção de cadastro -->
        <a href="index.php?action=register">Cadastrar-se</a></button> 
        </div>
-=======
-        <div>
-            <h2>Entrar</h2>
-            <form method="post" action="index.php?action=login">
-                <input type="email" name="email" placeholder="Email" required><br>
-                <input type="password" name="senha" placeholder="Senha" required><br>
-                <button type="submit">Login</button>
-            </form>
-            <!-- Define o destino do link e leva à opção de cadastro -->
-            <!-- <button><a href="index.php?action=register">Cadastrar-se</a></button>  -->
-            <a href="index.php?action=register">Cadastrar-se</a>
-
-        </div>
->>>>>>> 897228d5688bbb38bf7e08460142de0141c36b57
+       
     </main>
 </body>
 
