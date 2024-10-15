@@ -4,8 +4,7 @@ require_once 'models/database.php';
 class User
 {
     //Função para localizar usuário pelo email 
-    public static function findByEmail($email)
-    {
+    public static function findByEmail($email){
         $conn = Database::getConnection();
         $stmt = $conn->prepare("SELECT * FROM usuarios WHERE email = :email");
         $stmt->execute(['email' => $email]);
@@ -14,8 +13,7 @@ class User
 
 
     //Função para encontrar usuario pelo id
-    public static function find($id)
-    {
+    public static function find($id){
         $conn = Database::getConnection();
         $stmt = $conn->prepare("SELECT * FROM usuarios WHERE id = :id");
         $stmt->execute(['id' => $id]);
