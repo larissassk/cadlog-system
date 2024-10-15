@@ -1,0 +1,121 @@
+body {
+    background-color: #E5D7F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Agrupa o formulario */
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    width: 320px;
+    text-align: center;
+}
+
+/* Titulos */
+h2 {
+    margin-bottom: 20px;
+    color: #520E6B;
+    font-size: 24px; 
+    font-weight: 600;
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 6px; 
+    margin: auto;
+}
+/* Nome para campos */
+label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 6px;
+    text-align: left;
+}
+
+/* Campos de seleção e de preenchimento */
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: border-color 0.3s; 
+}
+
+input:focus {
+    border-color: #520E6B;
+    outline: none;
+}
+
+/* botões em geral */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #520E6B;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #E5D7F2;
+    transform: scale(1.05);
+}
+
+
+/* Links  */
+a {
+    display: block;
+    margin-top: 15px;
+    color: #13547a;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+a:hover {
+    text-decoration: underline; 
+}
+
+/* Opções de perfil */
+.perfil {
+    background-color: #E5D7F2;
+    border: 1px solid #520E6B;
+    color: #520E6B;
+    padding: 12px; 
+    border-radius: 10px; 
+}
+
+.perfil option {
+    background-color: #E5D7F2;
+    color: #520E6B; 
+}
+
+/* Responsividade simples */
+@media (max-width: 400px) {
+    .container {
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 22px; /* Tamanho da fonte reduzido em telas menores */
+    }
+
+    button {
+        padding: 10px; /* Ajuste no padding do botão */
+    }
+}
