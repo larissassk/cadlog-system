@@ -29,13 +29,22 @@
                     <td><?= $user['nome'] ?></td>
                     <td><?= $user['email'] ?></td>
                     <td><?= $user['perfil'] ?></td>
-                    <td></td>
+                    <td>
+                        <?php if($_SESSION['perfil'] == 'admin'|| $_SESSION['perfil'] == 'gestor' ):?>
+                            <a href="">Editar</a>
+                            <?php endif; ?>
+
+                            <!-- insere botao de exclusao apenas para perfil admin -->
+                            <?php if($_SESSION['perfil'] == 'admin'):?>
+                                <a href="">Excluir</a>
+                                <?php endif; ?>
+                    </td>
                 </tr>
- 
+<?php endforeach; ?>
             </tbody>
         </table>
  
-        <a href="" class="btn">Voltar ao Dashboard</a>
+        <a href="index.php?action=dashboard" class="btn">Voltar ao Dashboard</a>
     </div>
 </body>
  
