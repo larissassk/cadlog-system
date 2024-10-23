@@ -31,6 +31,5 @@
             <a href="index.php?action=login">Voltar ao Login</a>
         </div>
     </main>
-   </body>
-
+</body>
 </html>
