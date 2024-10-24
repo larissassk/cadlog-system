@@ -21,6 +21,9 @@ O **Cadlog System** oferece as seguintes funcionalidades:
 - **Cadastro de usuários**  
   Permite que novos usuários se registrem no sistema.  
   <img src="img/tela-cadastro.png" alt="Tela de Cadastro" width="300px">
+<img src="img/tela-cadastro.png" alt="Tela de Cadastro" width="300px">
+
+
 
 - **Login e logout**  
   Usuários podem acessar suas contas com credenciais válidas e encerrar suas sessões de forma segura.  
@@ -48,3 +51,17 @@ O **Cadlog System** oferece as seguintes funcionalidades:
 
 - **Larissa Manrique**
 - **Com instruções de** Leonardo Rocha
+
+
+## Banco de Dados: `sistema_usuarios`
+
+Este banco de dados contém a tabela `usuarios`, que armazena informações dos usuários do sistema.
+
+### Estrutura da Tabela `usuarios`
+
+- **id**: Identificador único (chave primária)
+- **nome**: Nome do usuário
+- **email**: Endereço de e-mail
+- **senha**: Senha (armazenada em hash)
+- **perfil**: Tipo de perfil (admin, gestor, colaborador)
+- **created_at**: Data de criação do registro
