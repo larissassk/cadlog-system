@@ -36,16 +36,13 @@ O **Cadlog System** oferece funcionalidades essenciais para o gerenciamento de u
 
 Após o login, o usuário é redirecionado com base no tipo de perfil:
 
-- **Admin**  
-  Acesso completo para gerenciar usuários e configurar o sistema.  
+- **Admin**: Acesso completo para gerenciar usuários e configurar o sistema.  
   <img src="img/adm.png" width="150px" />
 
-- **Gestor**  
-  Acesso para gerenciar sua equipe e acompanhar tarefas.  
+- **Gestor**: Acesso para gerenciar sua equipe e acompanhar tarefas.  
   <img src="img/gestor.png" width="150px" />
 
-- **Colaborador**  
-  Acesso limitado para visualizar e atualizar suas tarefas.  
+- **Colaborador**: Acesso limitado para visualizar e atualizar suas tarefas.  
   <img src="img/colab.png" width="150px" />
 
 ---
@@ -53,7 +50,7 @@ Após o login, o usuário é redirecionado com base no tipo de perfil:
 ## 🗄️ Banco de Dados
 
 O sistema utiliza um banco de dados **MySQL** para armazenar as informações dos usuários.  
-Arquivo de configuração: `database.sql`.
+**Arquivo de configuração**: `database.sql`.
 
 ### Estrutura da Tabela `usuarios`
 
@@ -77,5 +74,7 @@ Arquivo de configuração: `database.sql`.
 ## ✍️ Feito por
 
 - **Larissa Manrique**  
-- Com orientação de **Leonardo Rocha**
+  [LinkedIn](https://www.linkedin.com/in/larissa-manrique/)
 
+- **Leonardo Rocha**  
+  [LinkedIn](https://www.linkedin.com/in/leonardossrocha/)
