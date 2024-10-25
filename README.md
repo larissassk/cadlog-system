@@ -1,67 +1,81 @@
 # 🌐 Cadlog System
 
-**Cadlog System** é um sistema de cadastro e login desenvolvido em PHP utilizando a arquitetura **MVC** (Model-View-Controller). Este sistema visa facilitar a criação, autenticação e gerenciamento de usuários de forma segura e eficiente.
+O **Cadlog System** é um sistema simples e eficaz de cadastro e login, desenvolvido em PHP utilizando a arquitetura **MVC** (Model-View-Controller). Ele foi projetado para facilitar a criação e autenticação de usuários de forma segura.
 
 ---
 
 ## 🏛️ Arquitetura
 
-O sistema segue a arquitetura **MVC**, dividindo a aplicação em três componentes principais:
+O sistema é baseado na arquitetura **MVC**, que organiza a aplicação em três camadas principais:
 
-- **Model**: Responsável pela manipulação dos dados, conectando-se ao banco de dados.
-- **View**: Apresenta as interfaces para interação do usuário.
-- **Controller**: Media as requisições entre a View e o Model, processando as ações do usuário e atualizando os dados.
+- **Model**: Gerencia a interação com o banco de dados.
+- **View**: Apresenta as interfaces que os usuários interagem.
+- **Controller**: Controla as ações entre as Views e os Models.
 
 ---
 
 ## ⚙️ Funcionalidades
 
-O **Cadlog System** oferece as seguintes funcionalidades:
+O **Cadlog System** oferece funcionalidades essenciais para o gerenciamento de usuários:
 
-- **Cadastro de usuários**  
-  Permite que novos usuários se registrem no sistema.  
-  <img src="img/tela-cadastro.png" alt="Tela de Cadastro" width="300px">
-<img src="img/tela-cadastro.png" alt="Tela de Cadastro" width="300px">
+- **Cadastro de Usuários**  
+  Registre novos usuários no sistema de maneira simples.  
+  <img src="img/cad.png" width="150px" />
 
-
-
-- **Login e logout**  
-  Usuários podem acessar suas contas com credenciais válidas e encerrar suas sessões de forma segura.  
-  <img src="img/tela-login.png" alt="Tela de Login" width="300px">
+- **Login e Logout**  
+  Usuários podem fazer login com suas credenciais e encerrar suas sessões com segurança.  
+  <img src="img/login.png" width="150px" />
 
 - **Gerenciamento de Sessões**  
-  As sessões dos usuários são gerenciadas para garantir segurança e personalização.  
-    <img src="img/tipo-user.png" alt="Tipo de usuario" width="300px">
+  As sessões são gerenciadas automaticamente, garantindo personalização e segurança.  
+  <img src="img/tipo-usuarios.png" width="150px" />
 
+---
 
-- **Banco de Dados Integrado**  
-  Um banco de dados MySQL é utilizado para armazenar as informações dos usuários, com o arquivo de configuração `database.sql`.
+## 🌟 Acessos e Permissões
+
+Após o login, o usuário é redirecionado com base no tipo de perfil:
+
+- **Admin**  
+  Acesso completo para gerenciar usuários e configurar o sistema.  
+  <img src="img/adm.png" width="150px" />
+
+- **Gestor**  
+  Acesso para gerenciar sua equipe e acompanhar tarefas.  
+  <img src="img/gestor.png" width="150px" />
+
+- **Colaborador**  
+  Acesso limitado para visualizar e atualizar suas tarefas.  
+  <img src="img/colab.png" width="150px" />
+
+---
+
+## 🗄️ Banco de Dados
+
+O sistema utiliza um banco de dados **MySQL** para armazenar as informações dos usuários.  
+Arquivo de configuração: `database.sql`.
+
+### Estrutura da Tabela `usuarios`
+
+- **id**: Identificador único.
+- **nome**: Nome do usuário.
+- **email**: Endereço de e-mail.
+- **senha**: Senha (armazenada de forma segura).
+- **perfil**: Tipo de usuário (admin, gestor, colaborador).
+- **created_at**: Data de criação do registro.
 
 ---
 
 ## 🛠️ Tecnologias Utilizadas
 
-- **PHP**: Linguagem utilizada para o desenvolvimento do backend.
-- **MySQL**: Banco de dados responsável pelo armazenamento das informações.
-- **HTML/CSS**: Linguagens para a criação das interfaces do usuário (Views).
+- **PHP**: Backend do sistema.
+- **MySQL**: Banco de dados.
+- **HTML/CSS**: Interface do usuário (Views).
 
 ---
 
 ## ✍️ Feito por
 
-- **Larissa Manrique**
-- **Com instruções de** Leonardo Rocha
+- **Larissa Manrique**  
+- Com orientação de **Leonardo Rocha**
 
-
-## Banco de Dados: `sistema_usuarios`
-
-Este banco de dados contém a tabela `usuarios`, que armazena informações dos usuários do sistema.
-
-### Estrutura da Tabela `usuarios`
-
-- **id**: Identificador único (chave primária)
-- **nome**: Nome do usuário
-- **email**: Endereço de e-mail
-- **senha**: Senha (armazenada em hash)
-- **perfil**: Tipo de perfil (admin, gestor, colaborador)
-- **created_at**: Data de criação do registro
