@@ -1,17 +1,6 @@
 # 🌐 Cadlog System
 
-O **Cadlog System** é um sistema simples e eficaz de cadastro e login, desenvolvido em PHP utilizando a arquitetura **MVC** (Model-View-Controller). Ele foi projetado para facilitar a criação e autenticação de usuários de forma segura e eficiente, atendendo às necessidades de gerenciamento de acessos em diferentes níveis.
-
----
-
-## 📑 Índice
-
-1. [Arquitetura](#-arquitetura)
-2. [Funcionalidades](#-funcionalidades)
-3. [Acessos e Permissões](#-acessos-e-permissões)
-4. [Banco de Dados](#-banco-de-dados)
-5. [Tecnologias Utilizadas](#-tecnologias-utilizadas)
-6. [Feito por](#-feito-por)
+O **Cadlog System** é um sistema simples e eficaz de cadastro e login, desenvolvido em PHP utilizando a arquitetura **MVC** (Model-View-Controller). Foi projetado para facilitar a criação e autenticação de usuários de forma segura e eficiente, atendendo às necessidades de gerenciamento de acessos em diferentes níveis.
 
 ---
 
@@ -33,19 +22,19 @@ O **Cadlog System** oferece as seguintes funcionalidades essenciais:
 
   <div style="text-align: center; margin: 10px; width: 150px;">
     <strong>Cadastro de Usuários</strong><br>
-    Registre novos usuários no sistema de maneira simples.<br>
+    Registre novos usuários de forma simples.<br>
     <img src="img/cad.png" width="150px" />
   </div>
 
   <div style="text-align: center; margin: 10px; width: 150px;">
     <strong>Login e Logout</strong><br>
-    Usuários podem acessar suas contas e encerrar sessões com segurança.<br>
+    Acesso seguro às contas e encerramento de sessões.<br>
     <img src="img/login.png" width="150px" />
   </div>
 
   <div style="text-align: center; margin: 10px; width: 150px;">
     <strong>Gerenciamento de Sessões</strong><br>
-    As sessões são gerenciadas automaticamente, garantindo personalização e segurança.<br>
+    Controle automático de sessões, garantindo personalização e segurança.<br>
     <img src="img/tipos-usuarios.png" width="150px" />
   </div>
 
@@ -55,14 +44,14 @@ O **Cadlog System** oferece as seguintes funcionalidades essenciais:
 
 ## 🌟 Acessos e Permissões
 
-Após o login, os usuários são redirecionados com base no seu perfil, que determina os tipos de acesso e as permissões disponíveis:
+Após o login, os usuários são redirecionados com base no seu perfil, que determina os tipos de acesso e permissões disponíveis:
 
 <div style="display: flex; justify-content: space-around; align-items: flex-start;">
 
   <div style="text-align: center; margin: 10px; width: 150px;">
     <strong>Admin</strong><br>
     <em>Acesso completo</em><br>
-    Gerencia usuários e as configurações.<br>
+    Gerencia usuários e configurações.<br>
     <img src="img/adm.png" width="150px" />
   </div>
 
@@ -91,14 +80,14 @@ O sistema utiliza um banco de dados **MySQL** para armazenar as informações do
 
 ### Estrutura da Tabela `usuarios`
 
-| Campo       | Descrição                               |
-|-------------|-----------------------------------------|
-| **id**      | Identificador único                     |
-| **nome**    | Nome do usuário                         |
-| **email**   | Endereço de e-mail                     |
-| **senha**   | Senha (armazenada de forma segura)     |
-| **perfil**  | Tipo de usuário (admin, gestor, colaborador) |
-| **created_at** | Data de criação do registro           |
+| Campo        | Descrição                                   |
+|--------------|---------------------------------------------|
+| **id**       | Identificador único                         |
+| **nome**     | Nome do usuário                             |
+| **email**    | Endereço de e-mail                         |
+| **senha**    | Senha (armazenada de forma segura)         |
+| **perfil**   | Tipo de usuário (admin, gestor, colaborador) |
+| **created_at**| Data de criação do registro                |
 
 ---
 
@@ -115,5 +104,7 @@ O sistema utiliza um banco de dados **MySQL** para armazenar as informações do
 - **Larissa Manrique**  
   [LinkedIn](https://www.linkedin.com/in/larissa-manrique/)
 
-- **Leonardo Rocha**  
+- Com instruções do **Leonardo Rocha**  
   [LinkedIn](https://www.linkedin.com/in/leonardossrocha/)
+
+---
