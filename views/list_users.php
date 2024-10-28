@@ -135,7 +135,7 @@ a:hover {
                         <td><?= $user['perfil'] ?></td>
                         <td>
                             <?php if ($_SESSION['perfil'] == 'admin' || $_SESSION['perfil'] == 'gestor'): ?>
-                                <a href="">Editar</a>
+                                <a href="index.php?edit&id=<?= $user['id'] ?>">Editar</a>
                             <?php endif; ?>
 
                             <?php if ($_SESSION['perfil'] == 'admin'): ?>

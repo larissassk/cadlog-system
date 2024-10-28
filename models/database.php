@@ -10,7 +10,7 @@ class Database {
             $host     = 'localhost';
             $db       = 'sistema_usuarios';
             $user     = 'root';
-            $password = '';
+            $password = ''; 
 
             try {
                 // A conexão usa o driver Mysql (mysql:) e as informações de host e DB
