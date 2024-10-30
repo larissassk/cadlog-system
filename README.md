@@ -91,6 +91,23 @@ O sistema utiliza um banco de dados **MySQL** para armazenar as informações do
 
 ---
 
+## 📥 Instruções de Instalação
+
+1. **Clone o repositório**:
+   ```bash
+   git clone https://github.com/larissassk/cadlog-system.git
+   cd cadlog-system
+   
+2. Importe o banco de dados:
+Abra o database.sql no seu cliente MySQL (como phpMyAdmin) e execute-o para criar as tabelas necessárias.
+
+3. Configure o arquivo de conexão:
+Certifique-se de que as credenciais do banco de dados estão corretas no arquivo de configuração do sistema.
+
+5. Inicie o servidor:
+Utilize o XAMPP ou outro servidor local para executar o sistema e acesse http://localhost/cadlog-system.
+
+---
 ## 🛠️ Tecnologias Utilizadas
 
 - **PHP**: Backend do sistema.
