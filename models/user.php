@@ -25,6 +25,7 @@ class User
     public static function create($data)
     {
         $conn = Database::getConnection();
+        
         $stmt = $conn->prepare("INSERT INTO usuarios (nome, email, senha, perfil) VALUES (:nome, :email, :senha, :perfil)");
         $stmt->execute($data);
     }
@@ -33,17 +34,22 @@ class User
     public static function all()
     {
         $conn = Database::getConnection();
-        $stmt = $conn->query('SELECT * from usuarios');
+        $stmt = $conn->query('SELECT * FROM usuarios');
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 
-    public static function update($id, $data){
+    // Função para atualizar os dados do usuário
+    public static function update($id, $data)
+    {
         $conn = Database::getConnection();
 
-        $stmt=$conn->prepare('UPDATE usuarios SET nome = :nome email = :email, perfil = :perfil WHERE id = :id');
+        // Consulta corrigida com a vírgula correta
+        $stmt = $conn->prepare('UPDATE usuarios SET nome = :nome, email = :email, perfil = :perfil WHERE id = :id');
 
+        // Adiciona o ID aos dados para a execução
         $data['id'] = $id;
-        $stmt->execute($data);
+
+        // Execute a query e retorne o resultado
+        return $stmt->execute($data);
     }
 }
-
