@@ -46,4 +46,4 @@ class User
         $stmt->execute($data);
     }
 }
-?>
+

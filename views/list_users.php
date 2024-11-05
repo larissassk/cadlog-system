@@ -113,7 +113,7 @@ a:hover {
 
     </style>
 </head>
-<body class="<?= $_SESSION['perfil'] ?>">
+<body class="<?= htmlspecialchars($_SESSION['perfil']) ?>">
     <div class="container">
         <h2>Lista de Usuários</h2>
         <table class="styled-table">
@@ -129,17 +129,17 @@ a:hover {
             <tbody>
                 <?php foreach ($users as $user): ?>
                     <tr>
-                        <td><?= $user['id'] ?></td>
-                        <td><?= $user['nome'] ?></td>
-                        <td><?= $user['email'] ?></td>
-                        <td><?= $user['perfil'] ?></td>
+                        <td><?= htmlspecialchars($user['id']) ?></td>
+                        <td><?= htmlspecialchars($user['nome']) ?></td>
+                        <td><?= htmlspecialchars($user['email']) ?></td>
+                        <td><?= htmlspecialchars($user['perfil']) ?></td>
                         <td>
                             <?php if ($_SESSION['perfil'] == 'admin' || $_SESSION['perfil'] == 'gestor'): ?>
-                                <a href="index.php?edit&id=<?= $user['id'] ?>">Editar</a>
+                                <a class="ed" href="index.php?action=edit&id=<?= htmlspecialchars($user['id']) ?>">Editar</a>
                             <?php endif; ?>
 
                             <?php if ($_SESSION['perfil'] == 'admin'): ?>
-                                <a href="">Excluir</a>
+                                <a href="index.php?action=delete&id=<?= htmlspecialchars($user['id']) ?>" onclick="return confirm('Você tem certeza que deseja excluir este usuário?');">Excluir</a>
                             <?php endif; ?>
                         </td>
                     </tr>
