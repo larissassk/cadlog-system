@@ -10,107 +10,138 @@ if (isset($_SESSION['perfil'])):
     <title>Lista de Usuários</title>
     <link rel="stylesheet" type='text/css' media='screen' href="css/list.css">
     <style>
+        /* Base styles */
         body {
-    background-color: #E5D7F2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-}
+            background-color: #F4F6F9; /* Light background for better contrast */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            color: #333; /* Dark text for better readability */
+        }
 
-.container {
-    background-color: #ffffff;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-    width: 100%;
-    max-width: 600px;
-    text-align: center;
-    box-sizing: border-box;
-    overflow: auto; /* Adiciona rolagem se necessário */
-}
+        .container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 800px;
+            box-sizing: border-box;
+            overflow: auto;
+            text-align: center;
+        }
 
-h2 {
-    margin-bottom: 20px;
-    color: #520E6B;
-    font-size: 24px; 
-    font-weight: 600;
-}
+        h2 {
+            margin-bottom: 25px;
+            color: #4E2A84; /* A deeper purple shade */
+            font-size: 28px;
+            font-weight: bold;
+        }
 
-.styled-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-    font-size: 18px;
-    text-align: left;
-}
+        .styled-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 16px;
+            background-color: #ffffff;
+            text-align: left;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
 
-.styled-table thead tr {
-    background-color: #520E6B;
-    color: #ffffff;
-}
+        .styled-table thead {
+            background-color: #4E2A84; /* Purple header */
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+        }
 
-.styled-table th, .styled-table td {
-    padding: 12px 15px;
-}
+        .styled-table th, .styled-table td {
+            padding: 14px 18px;
+            text-align: left;
+        }
 
-.styled-table tbody tr {
-    border-bottom: 1px solid #ddd;
-}
+        .styled-table tbody tr {
+            border-bottom: 1px solid #ddd;
+        }
 
-.styled-table tbody tr:nth-of-type(even) {
-    background-color: #f2f2f2;
-}
+        .styled-table tbody tr:nth-of-type(even) {
+            background-color: #f9f9f9;
+        }
 
-.styled-table tbody tr:last-of-type {
-    border-bottom: 2px solid #520E6B;
-}
+        .styled-table tbody tr:hover {
+            background-color: #f1f1f1; /* Slight hover effect */
+            cursor: pointer;
+        }
 
-a {
-    color: #520E6B;
-    text-decoration: none;
-    font-size: 14px;
-    margin: 0 5px;
-}
+        .styled-table tbody tr:last-of-type {
+            border-bottom: 2px solid #4E2A84;
+        }
 
-a:hover {
-    text-decoration: underline; 
-}
+        /* Button styles */
+        a, .btn {
+            display: inline-block;
+            padding: 12px 20px;
+            background-color: #4E2A84;
+            color: white;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            text-decoration: none;
+            margin-top: 20px;
+        }
 
-.btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 20px;
-    background-color: #520E6B;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
-}
+        a:hover, .btn:hover {
+            background-color: #7633A1; /* Slight darkening on hover */
+            transform: scale(1.05);
+        }
 
-.btn:hover {
-    background-color: #E5D7F2;
-    transform: scale(1.05);
-}
+        a {
+            text-decoration: none;
+        }
 
-@media (max-width: 600px) {
-    .container {
-        width: 90%;
-    }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+                width: 90%;
+            }
 
-    h2 {
-        font-size: 22px;
-    }
+            h2 {
+                font-size: 24px;
+            }
 
-    .styled-table {
-        font-size: 16px;
-    }
-}
+            .styled-table th, .styled-table td {
+                font-size: 14px;
+                padding: 10px;
+            }
 
+            .btn, a {
+                padding: 10px 15px;
+                font-size: 14px;
+            }
+        }
+
+        /* Notification styles (Success/Error messages) */
+        .alert {
+            padding: 15px;
+            margin-top: 20px;
+            background-color: #D4EDDA;
+            color: #155724;
+            border-radius: 5px;
+            font-size: 16px;
+            border: 1px solid #C3E6CB;
+        }
+        .alert-error {
+            background-color: #F8D7DA;
+            color: #721C24;
+            border: 1px solid #F5C6CB;
+        }
     </style>
 </head>
 <body class="<?= htmlspecialchars($_SESSION['perfil']) ?>">
