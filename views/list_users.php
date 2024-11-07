@@ -165,13 +165,16 @@ if (isset($_SESSION['perfil'])):
                         <td><?= htmlspecialchars($user['email']) ?></td>
                         <td><?= htmlspecialchars($user['perfil']) ?></td>
                         <td>
+                            <!-- Função de edição de usuario -->
                             <?php if ($_SESSION['perfil'] == 'admin' || $_SESSION['perfil'] == 'gestor'): ?>
                                 <a class="ed" href="index.php?action=edit&id=<?= htmlspecialchars($user['id']) ?>">Editar</a>
                             <?php endif; ?>
+                            <!-- Função de excluir de usuario -->
 
                             <?php if ($_SESSION['perfil'] == 'admin'): ?>
+                                
                                 <a href="index.php?action=delete&id=<?= htmlspecialchars($user['id']) ?>" onclick="return confirm('Você tem certeza que deseja excluir este usuário?');">Excluir</a>
-                            <?php endif; ?>
+                                <?php endif; ?>
                         </td>
                     </tr>
                 <?php endforeach; ?>
