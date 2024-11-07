@@ -8,15 +8,6 @@
     <link rel="stylesheet" href="">
 </head>
 <style>
-    body {
-        background-color: #E5D7F2;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-        margin: 0;
-        font-family: 'Arial', sans-serif;
-    }
 
     .edit-container {
         background-color: #ffffff;
@@ -43,14 +34,6 @@
         color: #333;
     }
 
-    .edit-form input, .edit-form select {
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 15px;
-        border-radius: 8px;
-        border: 1px solid #ddd;
-        font-size: 16px;
-    }
 
     .edit-form input:focus, .edit-form select:focus {
         border-color: #520E6B;
@@ -69,10 +52,33 @@
         transition: background-color 0.3s, transform 0.2s;
     }
 
-    .btn:hover {
-        background-color: #E5D7F2;
-        transform: scale(1.05);
-    }
+    body {
+    background-color: #E5D7F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden; /* Adiciona essa linha para garantir que não há rolagem horizontal */
+}
+
+.edit-form input, .edit-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    line-height: 1.5; /* Aumenta o espaçamento entre as linhas */
+}
+
+.btn:hover {
+    background-color: #E5D7F2;
+    transform: scale(1.05);
+    background-color: #6A1B9A; /* Novo tom de hover mais chamativo */
+}
+
 
     .btn:active {
         transform: scale(1);
