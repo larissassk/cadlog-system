@@ -1,12 +1,23 @@
 # 🌐 Cadlog System
+## 📑 **Índice**
+- 🔹 [**Introdução**](#introdução)
+- 🏛️ [**Arquitetura**](#arquitetura)
+- ⚙️ [**Funcionalidades**](#funcionalidades)
+- 🔑 [**Acessos e Permissões**](#acessos-e-permissões)
+- 📝 [**Edição e Exclusão de Usuários**](#edição-e-exclusão-de-usuários)
+- 🗄️ [**Banco de Dados**](#banco-de-dados)
+- ⚡ [**Instalação**](#instalação)
+- 💻 [**Tecnologias**](#tecnologias)
+- ✍️ [**Feito por**](#feito-por)
+---
 
 O **Cadlog System** é um sistema simples e eficaz de cadastro e login, desenvolvido em PHP utilizando a arquitetura **MVC** (Model-View-Controller). Foi projetado para facilitar a criação e autenticação de usuários de forma segura e eficiente, atendendo às necessidades de gerenciamento de acessos em diferentes níveis.
 
 ---
 
-## 🏛️ Arquitetura
+## Arquitetura
 
-A aplicação é organizada em três camadas principais:
+🏛️ A aplicação é organizada em três camadas principais:
 
 - **Model**: Gerencia a interação com o banco de dados.
 - **View**: Apresenta as interfaces que os usuários interagem.
@@ -14,9 +25,9 @@ A aplicação é organizada em três camadas principais:
 
 ---
 
-## ⚙️ Funcionalidades
+## Funcionalidades
 
-O **Cadlog System** oferece as seguintes funcionalidades essenciais:
+⚙️ O **Cadlog System** oferece as seguintes funcionalidades essenciais:
 
 <div style="display: flex; justify-content: space-around; align-items: flex-start;">
 
@@ -42,7 +53,7 @@ O **Cadlog System** oferece as seguintes funcionalidades essenciais:
 
 ---
 
-## 🌟 Acessos e Permissões
+## Acessos e Permissões
 
 Após o login, os usuários são redirecionados com base no seu perfil, que determina os tipos de acesso e permissões disponíveis:
 
@@ -73,7 +84,7 @@ Após o login, os usuários são redirecionados com base no seu perfil, que dete
 
 ---
 
-## ✏️ Funcionalidades de Edição e Exclusão de Usuários
+## Edição e Exclusão de Usuários
 
 ### Edição de Usuário
 Agora é possível editar os dados dos usuários no Cadlog System. Você pode alterar:
@@ -98,9 +109,9 @@ Agora também é possível excluir usuários do sistema.
 
 ---
 
-## 🗄️ Banco de Dados
+## Banco de Dados
 
-O sistema utiliza um banco de dados **MySQL** para armazenar as informações dos usuários.  
+🗄️ O sistema utiliza um banco de dados **MySQL** para armazenar as informações dos usuários.  
 **Arquivo de configuração**: `database.sql`.
 
 ### Estrutura da Tabela `usuarios`
@@ -116,7 +127,7 @@ O sistema utiliza um banco de dados **MySQL** para armazenar as informações do
 
 ---
 
-## 📥 Instruções de Instalação
+## Instalação
 
 1. **Clone o repositório**:
    ```bash
@@ -137,7 +148,7 @@ O sistema utiliza um banco de dados **MySQL** para armazenar as informações do
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias
 
 - **PHP**: Backend do sistema.
 - **MySQL**: Banco de dados.
