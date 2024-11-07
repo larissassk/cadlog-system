@@ -73,15 +73,28 @@ Após o login, os usuários são redirecionados com base no seu perfil, que dete
 
 ---
 
-## ✏️ Funcionalidade de Edição de Usuário
+## ✏️ Funcionalidades de Edição e Exclusão de Usuários
 
-Agora é possível **editar os dados de usuários** diretamente no **Cadlog System**. A funcionalidade permite alterar informações como **nome**, **e-mail** e **perfil** (Admin, Gestor, Colaborador).
+### Edição de Usuário
+Agora é possível editar os dados dos usuários no Cadlog System. Você pode alterar:
 
-### Como Funciona:
-- **Edição de Dados**: Os campos são pré-preenchidos com os dados atuais do usuário, permitindo uma atualização fácil.
-- **Alteração de Perfil**: É possível alterar o perfil do usuário, ajustando as permissões automaticamente.
-- **Atualização no Banco de Dados**: As alterações são salvas no banco de dados e refletidas imediatamente.
+- **Nome**
+- **E-mail**
+- **Perfil** (Admin, Gestor, Colaborador)
+
+#### Como Funciona:
+- **Edição de Dados**: Os campos são pré-preenchidos com as informações atuais.
+- **Alteração de Perfil**: Permite alterar o perfil do usuário, ajustando as permissões automaticamente.
+- **Atualização no Banco de Dados**: As alterações são salvas no banco de dados e aplicadas imediatamente.
 - **Feedback**: Após a edição, o usuário é redirecionado para a lista de usuários com as mudanças aplicadas.
+
+### Exclusão de Usuário
+Agora também é possível excluir usuários do sistema.
+
+#### Como Funciona:
+- O usuário pode ser excluído **permanentemente**.
+- A exclusão requer **confirmação** para evitar erros.
+- Após a exclusão, a lista de usuários é **atualizada** automaticamente.
 
 ---
 
@@ -92,14 +105,14 @@ O sistema utiliza um banco de dados **MySQL** para armazenar as informações do
 
 ### Estrutura da Tabela `usuarios`
 
-| Campo        | Descrição                                   |
-|--------------|---------------------------------------------|
-| **id**       | Identificador único                         |
-| **nome**     | Nome do usuário                             |
-| **email**    | Endereço de e-mail                         |
-| **senha**    | Senha (armazenada de forma segura)         |
-| **perfil**   | Tipo de usuário (admin, gestor, colaborador)|
-| **created_at**| Data de criação do registro                |
+| Campo        | Descrição                                    |
+|--------------|----------------------------------------------|
+| **id**       | Identificador único                          |
+| **nome**     | Nome do usuário                              |
+| **email**    | Endereço de e-mail                          |
+| **senha**    | Senha (armazenada de forma segura)          |
+| **perfil**   | Tipo de usuário (admin, gestor, colaborador) |
+| **created_at**| Data de criação do registro                 |
 
 ---
 
@@ -109,6 +122,7 @@ O sistema utiliza um banco de dados **MySQL** para armazenar as informações do
    ```bash
    git clone https://github.com/larissassk/cadlog-system.git
    cd cadlog-system
+
 
    
 2. Importe o banco de dados: Execute o database.sql no MySQL.
