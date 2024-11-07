@@ -52,4 +52,13 @@ class User
         // Execute a query e retorne o resultado
         return $stmt->execute($data);
     }
+    // Função que exclui usuario
+    public static function delete($id)
+{
+    $conn = Database::getConnection();
+    $stmt = $conn->prepare("DELETE FROM usuarios WHERE id = :id"); 
+    $stmt->bindParam(':id', $id, PDO::PARAM_INT);
+    $stmt->execute(); 
+}
+
 }
