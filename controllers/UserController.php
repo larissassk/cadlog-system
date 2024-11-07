@@ -52,4 +52,13 @@ class UserController
             echo 'Você nao tem permissão para editar usuarios';
         }
     }
+    // Função que verifica se o ID é válido e executa a exclusão
+    public function delete($id)
+    {
+        if (is_numeric($id)) {
+            User::delete($id); // Supondo que a classe User tenha um método estático delete
+        }
+    }
+    
 }
+
