@@ -62,7 +62,7 @@ Após o login, os usuários são redirecionados com base no seu perfil, que dete
   <div style="text-align: center; margin: 10px; width: 150px;">
     <strong>Admin</strong><br>
     <em>Acesso completo</em><br>
-    Tem acesso a lista de usuarios, pode editar e excluir<br>
+     Pode visualizar a lista de usuários, além de editar e excluir registros.<br>
     <img src="img/adm.png" width="150px" />
   </div>
 
@@ -76,7 +76,7 @@ Após o login, os usuários são redirecionados com base no seu perfil, que dete
   <div style="text-align: center; margin: 10px; width: 150px;">
     <strong>Colaborador</strong><br>
     <em>Acesso limitado</em><br>
-    Ele entra na pagina mas nao tem acesso a lista e nem aos recursos como edita e excluir.<br>
+    Tem acesso restrito; não pode visualizar a lista de usuários nem realizar edições ou exclusões.<br>
     <img src="img/colab.png" width="150px" />
   </div>
 
