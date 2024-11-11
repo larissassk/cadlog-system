@@ -62,21 +62,21 @@ Após o login, os usuários são redirecionados com base no seu perfil, que dete
   <div style="text-align: center; margin: 10px; width: 150px;">
     <strong>Admin</strong><br>
     <em>Acesso completo</em><br>
-    Gerencia usuários e configurações.<br>
+    Tem acesso a lista de usuarios, pode editar e excluir<br>
     <img src="img/adm.png" width="150px" />
   </div>
 
   <div style="text-align: center; margin: 10px; width: 150px;">
     <strong>Gestor</strong><br>
     <em>Acesso moderado</em><br>
-    Gerencia sua equipe e acompanha tarefas.<br>
+    Tem acesso a lista e pode editar nao podendo excluir<br>
     <img src="img/gestor.png" width="150px" />
   </div>
 
   <div style="text-align: center; margin: 10px; width: 150px;">
     <strong>Colaborador</strong><br>
     <em>Acesso limitado</em><br>
-    Visualiza e atualiza suas próprias tarefas.<br>
+    Ele entra na pagina mas nao tem acesso a lista e nem aos recursos como edita e excluir.<br>
     <img src="img/colab.png" width="150px" />
   </div>
 
