@@ -1,5 +1,12 @@
 # 🌐 Cadlog System
-## 📑 **Índice**
+
+<p align="center">
+  <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="Linguagem PHP">
+  <img src="https://img.shields.io/badge/MySQL-00758F?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
+  <img src="https://img.shields.io/badge/MVC-Architecture-brightgreen" alt="Arquitetura MVC">
+</p>
+
+## 📑 Índice
 - 🔹 [**Introdução**](#introdução)
 - 🏛️ [**Arquitetura**](#arquitetura)
 - ⚙️ [**Funcionalidades**](#funcionalidades)
@@ -9,15 +16,18 @@
 - ⚡ [**Instalação**](#instalação)
 - 💻 [**Tecnologias**](#tecnologias)
 - ✍️ [**Feito por**](#feito-por)
+
 ---
 
+<a name="introdução"></a>
 O **Cadlog System** é um sistema simples e eficaz de cadastro e login, desenvolvido em PHP utilizando a arquitetura **MVC** (Model-View-Controller). Foi projetado para facilitar a criação e autenticação de usuários de forma segura e eficiente, atendendo às necessidades de gerenciamento de acessos em diferentes níveis.
 
 ---
 
+<a name="arquitetura"></a>
 ## Arquitetura
 
-🏛️ A aplicação é organizada em três camadas principais:
+🏛️ A aplicação é organizada em três camadas principais, conforme o padrão **Model-View-Controller (MVC)**.
 
 - **Model**: Gerencia a interação com o banco de dados.
 - **View**: Apresenta as interfaces que os usuários interagem.
@@ -25,65 +35,33 @@ O **Cadlog System** é um sistema simples e eficaz de cadastro e login, desenvol
 
 ---
 
+<a name="funcionalidades"></a>
 ## Funcionalidades
 
 ⚙️ O **Cadlog System** oferece as seguintes funcionalidades essenciais:
 
-<div style="display: flex; justify-content: space-around; align-items: flex-start;">
-
-  <div style="text-align: center; margin: 10px; width: 150px;">
-    <strong>Cadastro de Usuários</strong><br>
-    Registre novos usuários de forma simples.<br>
-    <img src="img/cad.png" width="150px" />
-  </div>
-
-  <div style="text-align: center; margin: 10px; width: 150px;">
-    <strong>Login e Logout</strong><br>
-    Acesso seguro às contas e encerramento de sessões.<br>
-    <img src="img/login.png" width="150px" />
-  </div>
-
-  <div style="text-align: center; margin: 10px; width: 150px;">
-    <strong>Gerenciamento de Sessões</strong><br>
-    Controle automático de sessões, garantindo personalização e segurança.<br>
-    <img src="img/tipos-usuarios.png" width="150px" />
-  </div>
-
-</div>
+| Recurso | Descrição | Demonstração |
+| :--- | :--- | :--- |
+| **Cadastro de Usuários** | Registre novos usuários de forma simples. | <img src="img/cad.png" width="250px" alt="Tela de Cadastro"/> |
+| **Login e Logout** | Acesso seguro às contas e encerramento de sessões. | <img src="img/login.png" width="250px" alt="Tela de Login"/> |
+| **Gerenciamento de Sessões** | Controle automático de sessões e personalização baseada em perfil. | <img src="img/tipos-usuarios.png" width="250px" alt="Tipos de Usuários no Sistema"/> |
 
 ---
 
+<a name="acessos-e-permissões"></a>
 ## Acessos e Permissões
 
-Após o login, os usuários são redirecionados com base no seu perfil, que determina os tipos de acesso e permissões disponíveis:
+Após o login, os usuários são redirecionados com base no seu perfil, que determina os tipos de acesso e permissões disponíveis.
 
-<div style="display: flex; justify-content: space-around; align-items: flex-start;">
-
-  <div style="text-align: center; margin: 10px; width: 150px;">
-    <strong>Admin</strong><br>
-    <em>Acesso completo</em><br>
-     Pode visualizar a lista de usuários, além de editar e excluir registros.<br>
-    <img src="img/adm.png" width="150px" />
-  </div>
-
-  <div style="text-align: center; margin: 10px; width: 150px;">
-    <strong>Gestor</strong><br>
-    <em>Acesso moderado</em><br>
-    Tem acesso a lista e pode editar nao podendo excluir<br>
-    <img src="img/gestor.png" width="150px" />
-  </div>
-
-  <div style="text-align: center; margin: 10px; width: 150px;">
-    <strong>Colaborador</strong><br>
-    <em>Acesso limitado</em><br>
-    Tem acesso restrito; não pode visualizar a lista de usuários nem realizar edições ou exclusões.<br>
-    <img src="img/colab.png" width="150px" />
-  </div>
-
-</div>
+| Perfil | Nível de Acesso | Visualizar Lista | Editar Registros | Excluir Registros | Demonstração |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Admin** | Completo | ✅ Sim | ✅ Sim | ✅ Sim | <img src="img/adm.png" width="250px" alt="Perfil Admin"/> |
+| **Gestor** | Moderado | ✅ Sim | ✅ Sim | ❌ Não | <img src="img/gestor.png" width="250px" alt="Perfil Gestor"/> |
+| **Colaborador** | Limitado | ❌ Não | ❌ Não | ❌ Não | <img src="img/colab.png" width="250px" alt="Perfil Colaborador"/> |
 
 ---
 
+<a name="edição-e-exclusão-de-usuários"></a>
 ## Edição e Exclusão de Usuários
 
 ### Edição de Usuário
@@ -109,45 +87,40 @@ Agora também é possível excluir usuários do sistema.
 
 ---
 
+<a name="banco-de-dados"></a>
 ## Banco de Dados
 
-🗄️ O sistema utiliza um banco de dados **MySQL** para armazenar as informações dos usuários.  
+🗄️ O sistema utiliza um banco de dados **MySQL** para armazenar as informações dos usuários.
 **Arquivo de configuração**: `database.sql`.
 
 ### Estrutura da Tabela `usuarios`
 
-| Campo        | Descrição                                    |
-|--------------|----------------------------------------------|
-| **id**       | Identificador único                          |
-| **nome**     | Nome do usuário                              |
-| **email**    | Endereço de e-mail                          |
-| **senha**    | Senha (armazenada de forma segura)          |
-| **perfil**   | Tipo de usuário (admin, gestor, colaborador) |
-| **created_at**| Data de criação do registro                 |
+| Campo | Descrição |
+| :--- | :--- |
+| **id** | Identificador único |
+| **nome** | Nome do usuário |
+| **email** | Endereço de e-mail |
+| **senha** | Senha (**armazenada de forma segura** utilizando `password_hash()`) |
+| **perfil** | Tipo de usuário (admin, gestor, colaborador) |
+| **created_at** | Data de criação do registro |
 
 ---
 
+<a name="instalação"></a>
 ## Instalação
 
-1. **Clone o repositório**:
-   ```bash
-   git clone https://github.com/larissassk/cadlog-system.git
-   cd cadlog-system
-
-
-   
-2. Importe o banco de dados: Execute o database.sql no MySQL.
-
-
-
-3. Configure a conexão: Atualize as credenciais no arquivo de configuração.
-
-
-
-4. Inicie o servidor: Use o XAMPP ou outro servidor local e acesse http://localhost/cadlog-system.
+1.  **Clone o repositório**:
+    ```bash
+    git clone [https://github.com/larissassk/cadlog-system.git](https://github.com/larissassk/cadlog-system.git)
+    cd cadlog-system
+    ```
+2.  **Importe o banco de dados**: Execute o `database.sql` no MySQL.
+3.  **Configure a conexão**: Atualize as credenciais no arquivo de configuração.
+4.  **Inicie o servidor**: Use o XAMPP ou outro servidor local e acesse `http://localhost/cadlog-system`.
 
 ---
 
+<a name="tecnologias"></a>
 ## Tecnologias
 
 - **PHP**: Backend do sistema.
@@ -156,12 +129,11 @@ Agora também é possível excluir usuários do sistema.
 
 ---
 
+<a name="feito-por"></a>
 ## ✍️ Feito por
 
-- **Larissa Manrique**  
+- **Larissa Manrique**
   [LinkedIn](https://www.linkedin.com/in/larissa-manrique/)
 
-- Com instruções do **Leonardo Rocha**  
+- Com instruções do **Leonardo Rocha**
   [LinkedIn](https://www.linkedin.com/in/leonardossrocha/)
-
-
